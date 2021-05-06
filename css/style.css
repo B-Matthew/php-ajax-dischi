@@ -1,0 +1,64 @@
+/* Regole generali */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-image: url("https://images3.alphacoders.com/106/thumb-1920-1069102.jpg");
+  font-family: 'Pangolin', cursive;
+  color: white;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  flex-basis: 22%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+}
+
+li:hover {
+  animation: rotate 4s linear infinite;
+}
+li:hover h2, li:hover h3, li:hover p {
+  color: yellow;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+img {
+  height: 300px;
+  width: 90%;
+}
+h1 {
+  font-size: 70px;
+}
